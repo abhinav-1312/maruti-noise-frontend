@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2 class="poppins-semibold">Maruti Water Pump Noise Test</h2>
+    </header>
+    <main>
+      <div class="upload-container">
+        <h1 class="poppins-semibold">Welcome</h1>
+        <h3 class="poppins-medium greet">Upload The Audio File</h3>
+        <form id="file-upload-form" onsubmit="submitFile(event)">
+          <div class="form-div">
+            <label
+              for="file-upload"
+              class="file-upload-label poppins-regular"
+              id="file-upload-label"
+            >
+              Upload File
+            </label>
+            <input
+              type="file"
+              id="file-upload"
+              class="file-input"
+              accept="audio/*"
+              onchange="displayFileName()"
+              name="file"
+            />
+            <div id="file-name" class="file-name poppins-regular"></div>
+            <button
+              type="submit"
+              id="submit-btn"
+              class="submit-btn file-upload-label"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="response-container" class="poppins-regular response-container" >
+        <div class="after-response" id="after-response">
+
+            <p>
+                <strong>Training Accuracy:</strong>
+                <span id="training-accuracy"></span>
+            </p>
+            <p>
+                <strong>Validation Accuracy:</strong>
+                <span id="validation-accuracy"></span>
+            </p>
+            <p><strong>Probability:</strong> <span id="probability"></span></p>
+            <p><strong>Remark:</strong> <span id="remark"></span></p>
+        </div>
+
+        <div class="before-response" id="before-response">
+            <h2>Please submit the audio file to generate result.</h2>
+        </div>
+    </div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
