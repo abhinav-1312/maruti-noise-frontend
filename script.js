@@ -8,6 +8,10 @@ function displayFileName() {
     fileNameDisplay.textContent = fileInput.files[0].name;
     submitButton.style.display = "block";
     fileUploadLabel.style.display = "none";
+    const videoPlayer = document.getElementById('videoPlayer');
+    videoPlayer.src = URL.createObjectURL(fileInput.files[0]);
+    videoPlayer.style.display = 'block';
+    videoPlayer.load();
   } else {
     fileNameDisplay.textContent = "";
     submitButton.disabled = true;
