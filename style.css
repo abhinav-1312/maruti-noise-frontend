@@ -41,7 +41,7 @@
 
 .file-upload-label {
   padding: 0.5rem;
-  background-color: #6a42c2;
+  background-color: #FA4032;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -76,8 +76,9 @@ header {
   width: 100%;
   padding: 1rem;
   text-align: center;
-  background-color: #6a42c2;
-  color: #ffff;
+  background-color: #FFF7D1;
+  /* background-color: #6a42c2; */
+  /* color: #ffff; */
 }
 
 .greet {
