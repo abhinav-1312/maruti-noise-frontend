@@ -70,6 +70,9 @@
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 1rem;
   text-align: center;
@@ -109,6 +112,15 @@ main{
 
 p{
     font-size: 1.5rem;
+}
+
+img{
+  width: 12rem;
+  aspect-ratio: 6 / 1;
+}
+
+.heading-text{
+  margin: auto;
 }
 
 /* Media query for screens 600px or smaller */

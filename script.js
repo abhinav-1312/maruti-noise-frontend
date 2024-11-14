@@ -49,6 +49,7 @@ async function submitFile(event) {
       result.validation_accuracy;
     document.getElementById("probability").innerText = result.probability;
     document.getElementById("remark").innerText = result.remark;
+    document.getElementById("defect-judgement").innerText = result.remark.substring(0, 2) === "OK" ? "Your claim is rejected." : "Your claim is approved";
   } catch (error) {
     console.error(error);
     document.getElementById("response-container").innerText =
