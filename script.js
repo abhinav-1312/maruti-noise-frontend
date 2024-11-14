@@ -49,9 +49,9 @@ async function submitFile(event) {
     // Display each field in the response-container
     document.getElementById("training-accuracy").innerText =
       result.training_accuracy;
-    document.getElementById("validation-accuracy").innerText =
-      result.validation_accuracy;
-    document.getElementById("probability").innerText = result.probability;
+    // document.getElementById("validation-accuracy").innerText =
+    //   result.validation_accuracy;
+    // document.getElementById("probability").innerText = result.probability;
     document.getElementById("remark").innerText = result.remark;
     document.getElementById("defect-judgement").innerText = result.remark.substring(0, 2) === "OK" ? "Your claim is rejected." : "Your claim is approved";
   } catch (error) {
